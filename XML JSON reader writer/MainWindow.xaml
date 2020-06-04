@@ -6,7 +6,35 @@
         xmlns:local="clr-namespace:XML_JSON_reader_writer"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
+    <Window.Resources>
+        <Style x:Key="BtnStyle" TargetType="Button">
+            <Setter Property="Width" Value="80"/>
+            <Setter Property="Height" Value="20"/>
+        </Style>
+    </Window.Resources>
+    <Grid x:Name="MainGrid">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="BtnXMLRead" Content="XML Read" Style="{StaticResource BtnStyle}" Grid.Column="0" Click="BtnXMLRead_Click"/>
+        <Button x:Name="BtnXMLWrite" Content="XML Write" Style="{StaticResource BtnStyle}" Grid.Column="1" Click="BtnXMLWrite_Click"/>
+        <Button x:Name="BtnJSONRead" Content="JSON Read" Style="{StaticResource BtnStyle}" Grid.Column="2" Click="BtnJSONRead_Click"/>
+        <Button x:Name="BtnJSONWrite" Content="JSON Write" Style="{StaticResource BtnStyle}" Grid.Column="3" Click="BtnJSONWrite_Click"/>
+        <DataGrid x:Name="dgView" Grid.Row="1" Grid.ColumnSpan="4">
+            <DataGrid.Columns>
+                <DataGridTextColumn MinWidth="20" Header="#" Binding="{Binding index}"/>
+                <DataGridTextColumn MinWidth="70" Header="Brand" Binding="{Binding Brand}"/>
+                <DataGridTextColumn MinWidth="70" Header="Model" Binding="{Binding Model}"/>
+                <DataGridTextColumn MinWidth="50" Header="Color" Binding="{Binding Color}"/>
+                <DataGridTextColumn MinWidth="50" Header="Price" Binding="{Binding Price}"/>
+            </DataGrid.Columns>
+        </DataGrid>
     </Grid>
 </Window>
