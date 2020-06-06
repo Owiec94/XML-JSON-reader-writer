@@ -1,0 +1,21 @@
+[
+	{
+		"brand": "Opel",
+		"model": "Astra",
+		"color": "Yellow",
+		"price": 32000
+          
+	},
+	{
+		"brand": "Ford",
+		"model": "Mustang",
+		"color": "Blue",
+		"price": 27000
+	},
+	{
+	 "brand": "Suzuki",
+	 "model": "Swift",
+	 "color": "Red",
+	 "price": 48000
+	}
+]

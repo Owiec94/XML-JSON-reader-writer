@@ -29,7 +29,7 @@
         <Button x:Name="BtnJSONWrite" Content="JSON Write" Style="{StaticResource BtnStyle}" Grid.Column="3" Click="BtnJSONWrite_Click"/>
         <DataGrid x:Name="dgView" Grid.Row="1" Grid.ColumnSpan="4">
             <DataGrid.Columns>
-                <DataGridTextColumn MinWidth="20" Header="#" Binding="{Binding index}"/>
+                <DataGridTextColumn MinWidth="20" Header="#" Binding="{Binding Nbr}"/>
                 <DataGridTextColumn MinWidth="70" Header="Brand" Binding="{Binding Brand}"/>
                 <DataGridTextColumn MinWidth="70" Header="Model" Binding="{Binding Model}"/>
                 <DataGridTextColumn MinWidth="50" Header="Color" Binding="{Binding Color}"/>

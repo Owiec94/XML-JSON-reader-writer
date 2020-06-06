@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<cars>
+	<car>
+		<brand>Opel</brand>
+		<model>Astra</model>
+		<color>Yellow</color>
+		<price>32000</price>
+	</car>
+	<car>
+		<brand>Ford</brand>
+		<model>Mustang</model>
+		<color>Blue</color>
+		<price>27000</price>
+	</car>
+	<car>
+		<brand>Suzuki</brand>
+		<model>Swift</model>
+		<color>Red</color>
+		<price>48000</price>
+	</car>
+</cars>  
