@@ -48,7 +48,7 @@ namespace XML_JSON_reader_writer
 
         private void BtnJSONWrite_Click(object sender, RoutedEventArgs e)
         {
-
+            SaveJSONFile();
         }
     }
 }

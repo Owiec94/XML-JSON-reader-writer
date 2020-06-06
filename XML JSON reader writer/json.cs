@@ -32,13 +32,24 @@ namespace XML_JSON_reader_writer
            
         }
 
-        public class json
+        private void SaveJSONFile()
         {
-          
-            public string brand { get; set; }
-            public string model { get; set; }
-            public string color { get; set; }
-            public int price { get; set; }
+            SaveFileDialog Sfd = new SaveFileDialog
+            {
+                FileName = "",
+                Filter = "json (*.json)|*.json"
+            };
+            if (true == Sfd.ShowDialog())
+            {
+                string Filename = Sfd.FileName;
+                SaveToJSON(Filename);
+            }
+        }
+
+        private void SaveToJSON(String Path)
+        {
+            string json = JsonConvert.SerializeObject(Cars.ToArray(), Formatting.Indented);
+            File.WriteAllText(Path, json);
         }
 
         private void LoadJSONToList(string Path)

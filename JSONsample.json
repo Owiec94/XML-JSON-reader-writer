@@ -1,21 +1,20 @@
 [
-	{
-		"brand": "Opel",
-		"model": "Astra",
-		"color": "Yellow",
-		"price": 32000
-          
-	},
-	{
-		"brand": "Ford",
-		"model": "Mustang",
-		"color": "Blue",
-		"price": 27000
-	},
-	{
-	 "brand": "Suzuki",
-	 "model": "Swift",
-	 "color": "Red",
-	 "price": 48000
-	}
+  {
+    "Brand": "Opel",
+    "Model": "Astra",
+    "Color": "Yellow",
+    "Price": 32000
+  },
+  {
+    "Brand": "Ford",
+    "Model": "Mustang",
+    "Color": "Blue",
+    "Price": 27000
+  },
+  {
+    "Brand": "Suzuki",
+    "Model": "Swift",
+    "Color": "Red",
+    "Price": 48000
+  }
 ]

@@ -71,7 +71,6 @@ namespace XML_JSON_reader_writer
             {
                 FileName = "",
                 Filter = "XML (*.xml)|*.xml"
-
             };
             if (true == Sfd.ShowDialog())
             {
